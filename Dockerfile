@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     bind9-host \
     bind9utils \
     perl \
+    curl \
     rsync \
     psmisc \
     git \
