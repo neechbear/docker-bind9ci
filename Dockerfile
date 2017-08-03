@@ -12,5 +12,6 @@ RUN apt-get update && apt-get install -y \
     xz-utils \
     dnsutils \
     moreutils \
+    libwww-perl \
  && rm -rf /var/lib/apt/lists/*
 
