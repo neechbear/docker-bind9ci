@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     dnsutils \
     moreutils \
     libwww-perl \
-    dev-scripts \
+    devscripts \
     quilt \
     debhelper \
  && rm -rf /var/lib/apt/lists/*
