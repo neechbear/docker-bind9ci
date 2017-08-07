@@ -1,6 +1,13 @@
 FROM ubuntu:trusty
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get -qq -o Dpkg::Use-Pty=0 update && \
+    apt-get -qq -o Dpkg::Use-Pty=0 install -y --no-install-recommends \
+    software-properties-common python-software-properties \
+ < /dev/null > /dev/null
+
+RUN add-apt-repository ppa:nicolaw/blip
+
+RUN apt-get -qq -o Dpkg::Use-Pty=0 update && apt-get install -y \
     bind9 \
     bind9-host \
     bind9utils \
