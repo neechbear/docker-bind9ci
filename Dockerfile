@@ -24,5 +24,6 @@ RUN apt-get -qq -o Dpkg::Use-Pty=0 update && apt-get install -y \
     devscripts \
     quilt \
     debhelper \
+    blip \
  && rm -rf /var/lib/apt/lists/*
 
